@@ -8,16 +8,19 @@ const HeroSection = () => {
           SHOES.YOUR FEET DESERVE THE BEST AND WE’RE HERE TO HELP YOU WITH OUR
           SHOES.
         </p>
-      </div>
-      <div className="hero-btn">
-        <button>Shop Now</button>
-        <button>Catagory</button>
-      </div>
-      <div className="shopping">
-        <p>Also Available On</p>
-        <div className="brand-icons">
-          <img src="public\images\flipkart.png" alt="flipkart-logo" />
-          <img src="public\images\amazon.png" alt="amazon-logo" />
+
+        <div className="hero-btn">
+          <button>Shop Now </button>
+          <button className="secondary-btn">Category</button>
+        </div>
+
+        <div className="shopping">
+          <p>Also Available On</p>
+
+          <div className="brand-icons">
+            <img src="/images/amazon.png" alt="amazon-logo" />
+            <img src="/images/flipkart.png" alt="flipkart-logo" />
+          </div>
         </div>
       </div>
       <div className="hero-image">
