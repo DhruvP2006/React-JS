@@ -8,11 +8,12 @@ function App() {
   return (
     <div>
       <Navigation />
-      <ContactHeader />
-      <ContactForm />
-      <Button />
+      <main>
+        <ContactHeader />
+        <ContactForm />
+      </main>
     </div>
   );
 }
- 
+
 export default App;
