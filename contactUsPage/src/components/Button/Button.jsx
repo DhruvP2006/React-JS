@@ -1,4 +1,3 @@
-import { MdMessage } from "react-icons/md";
 import styles from "./Button.module.css";
 
 const Button = ({ isOutline, icon, text, onClick }) => {

@@ -29,6 +29,10 @@
   padding: 0 8px;
 }
 
+.form_control textarea {
+  padding: 8px;
+}
+
 .form_control label {
   position: absolute;
   top: -12px;

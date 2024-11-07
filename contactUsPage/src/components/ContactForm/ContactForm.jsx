@@ -3,11 +3,18 @@ import styles from "./ContactForm.module.css";
 import { MdMessage } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { useState } from "react";
 
 const ContactForm = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+
   const onSubmit = (event) => {
     event.preventDefault();
-    console.log(event);
+    setName(event.target[0].value);
+    setEmail(event.target[1].value);
+    setText(event.target[2].value);
   };
 
   return (
@@ -38,9 +45,15 @@ const ContactForm = () => {
             <label htmlFor="text">Text</label>
             <textarea type="text" name="name" rows="8" />
           </div>
-          <div style={{ display: "flex", justifyContent: "end" }}>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "end",
+            }}
+          >
             <Button text="SUBMIT BUTTON" />
           </div>
+          <div>{name + "," + email + "," + Text}</div>
         </form>
       </div>
       <div className={styles.contact_image}>
