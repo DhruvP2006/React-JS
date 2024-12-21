@@ -1,11 +1,6 @@
-import StartGame from "./components/StartGame/startGame";
+import StartGame from "./components/StartGame/startGame.jsx";
 import styled from "styled-components";
 
-const Button = styled.button`
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-`;
 function App() {
   return (
     <div>
